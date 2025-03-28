@@ -18,13 +18,11 @@
     }
   </style>
   <body class="bg-slate-100 flex">
-   
+
     <div class="main flex">
-        <div class="left w-1/5 h-screen py-5 flex flex-col justify-start">
-            <div
-              class="left-top flex justify-between items-center flex-row gap-5"
-              style="width: 58%; margin-left: 30px"
-            >
+      <!-- left sidebar starts -->
+        <div class="left h-screen py-5 flex flex-col justify-start" style="width: 22%;">
+            <div class="left-top flex justify-between items-center flex-row gap-5" style="width: 58%; margin-left: 30px">
               <i class="fa-solid fa-bars text-lg"></i>
               <img
                 src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_2x_r5.png"
@@ -87,11 +85,14 @@
               <p class="text-[20px] font-semibold text-slate-200">Labels</p>
               <p class="text-2xl font-semibold text-slate-200 pr-4">+</p>
             </div>
-          </div>
-         
-          <div class="middle w-full h-screen">
-            <div class="flex justify-between items-center">
-                <div class="search p-2 flex justify-between items-center" style="background-color:#e2e8f0;margin-top: 10px;width:72%; border-radius: 1.5rem;">
+        </div>
+         <!-- left sidebar ends -->
+          <!-- middle sidebar starts -->
+          <div class="middle h-screen" style="width:80%;">
+            <!-- middle top portion starts -->
+            <div class="flex justify-between items-center w-full">
+              <!-- search bar starts -->
+                <div class="search p-2 flex justify-between items-center" style="background-color:#e2e8f0;margin-top: 10px;width:75%; border-radius: 1.5rem;">
                     <div class="flex justify-center items-center pl-4 py-1 gap-4">
                         <i class="fas fa-search text-gray-500"></i>
                         <span>Search mail</span>
@@ -100,41 +101,64 @@
                         <i class="material-icons text-gray-600 text-3xl cursor-pointer">tune</i>
                     </div>
                 </div>
-                <div class="flex items-center py-4 px-2 gap-4">
-                    <i class="material-icons icon">help_outline</i>  <!-- Gemini (Help) Icon -->
+              <!-- search bar ends -->
+               <!-- icon portion starts -->
+                <div class="flex items-center py-4 px-2" style="gap:1rem;">
+                    <i class="material-icons icon">help_outline</i> 
                     <i class="material-icons icon">settings</i>
-                    <i class="material-icons">auto_awesome</i>
-                    <i class="material-icons icon">apps</i>       <!-- Google Apps 9 Dots -->
-
+                    <i class="material-icons icon">apps</i>       
+                  <span class="border border-black text-xl px-4 py-2" style="border-radius:1.5rem; background-color: black;color:white;font-weight: bold;padding:4px 12px;">P</span>
                 </div>
+                <!-- icon portion ends -->
             </div>
-            <div class="rounded-xl" style="height: 90vh; width: 72vw; margin-top: 1.5rem;background-color: #fff;">
-                <div class="icons flex justify-between text-slate-50">
-                  <div
-                    class="flex justify-center items-center gap-5 mt-4"
-                    style="width: 20%; height: 5.5vh"
-                  >
-                    <div class="flex justify-center items-center gap-2">
-                      <input type="checkbox" name="" id="" />
-                      <i class="fas fa-caret-down" style="font-size: 10px"></i>
+            <!-- middle top portion ends -->
+             <!-- middle bottom portion starts -->
+              <div class="middle w-full flex">
+                <!-- white content starts -->
+                <div class="rounded-xl" style="height: 90vh; width: 74vw; margin-top: 1.5rem;background-color: #fff;">
+                  <div class="icons flex justify-between text-slate-50">
+                    <div
+                      class="flex justify-center items-center gap-5 mt-4"
+                      style="width: 20%; height: 5.5vh"
+                    >
+                      <div class="flex justify-center items-center gap-2">
+                        <input type="checkbox" name="" id="" />
+                        <i class="fas fa-caret-down" style="font-size: 10px"></i>
+                      </div>
+                      <i class="fa-solid fa-rotate-right"></i>
+                      <i class="fa-solid fa-ellipsis-vertical"></i>
                     </div>
-                    <i class="fa-solid fa-rotate-right"></i>
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                  </div>
-                  <div
-                    class="flex justify-center items-center gap-1 mt-4"
-                    style="width: 17%; justify-content: space-around"
-                  >
-                    <i class="fa-solid fa-angle-left"></i>
-                    <i class="fa-solid fa-angle-right"></i>
-                    <div class="flex justify-center items-center gap-2">
-                      <i class="fa-solid fa-keyboard"></i>
-                      <i class="fas fa-caret-down" style="font-size: 10px"></i>
+                    <div
+                      class="flex justify-center items-center gap-1 mt-4"
+                      style="width: 17%; justify-content: space-around"
+                    >
+                      <i class="fa-solid fa-angle-left"></i>
+                      <i class="fa-solid fa-angle-right"></i>
+                      <div class="flex justify-center items-center gap-2">
+                        <i class="fa-solid fa-keyboard"></i>
+                        <i class="fas fa-caret-down" style="font-size: 10px"></i>
+                      </div>
                     </div>
                   </div>
                 </div>
+                <!-- white content ends -->
+                 <!-- right icons starts-->
+                <div class="right-side-bar flex flex-col" style="padding: 1rem;gap:4rem;font-size: 1.2rem;">
+                  <div class="icon flex flex-col" style="gap:2rem;">
+                    <i class="fa-solid fa-calendar-days" style="margin-top: 2rem;"></i>
+                    <i class="fa-regular fa-clipboard text-center" style="margin-top: 1rem;background-color:yellow;"></i>
+                    <i class="fa-regular fa-circle-check" style="margin-top: 1rem;color:blue;"></i>
+                    <i class="fa-regular fa-user" style="margin-top: 1rem;color:blue;"></i>
+                  </div>
+                  <div class="plus">
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                </div> 
+                <!-- right icons ends -->
               </div>
+              <!-- middle bottom portion ends -->
           </div>
+          <!-- middle sidebar ends -->
     </div>
     <!-- middle main -->
     <!-- right  side-->
