@@ -5,3 +5,6 @@
 .bg-compose{
     background-color: #C2E7FF;
 }
+.rowSection:hover{
+    background-color: #94a3b819;
+}
