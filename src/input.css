@@ -8,3 +8,10 @@
 .rowSection:hover{
     background-color: #94a3b819;
 }
+.rowSection:focus-within,
+.rowSection:active {
+    border-bottom-width: 50%;
+  border-bottom: 2px solid blue;
+  color: blue !important;
+  outline: none;
+}
