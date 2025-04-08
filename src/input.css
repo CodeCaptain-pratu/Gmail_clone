@@ -15,3 +15,15 @@
   color: blue !important;
   outline: none;
 }
+.notify{
+    border-top:1px solid rgba(128, 128, 128, 0.272);
+    font-weight: 600;
+}
+.notify:hover{
+    box-shadow: 0px 0.5px 1px;
+    cursor: pointer;
+}
+.plus-hover:hover{
+    background-color:#3c3e4253;
+    transition: 0.3s;
+}
